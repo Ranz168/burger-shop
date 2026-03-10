@@ -1,0 +1,132 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.hero-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  color: #ffcc80;
+  padding: 10px 16px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #eee;
+  font-size: 1.1rem;
+  max-width: 580px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  padding: 15px 24px;
+  border-radius: 16px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff7b00, #ffb347);
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255,255,255,0.4);
+  color: white;
+}
+
+.hero-card {
+  background: rgba(255,255,255,0.08);
+  padding: 18px;
+  border-radius: 30px;
+  backdrop-filter: blur(12px);
+}
+
+.hero-card img {
+  width: 100%;
+  border-radius: 24px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 70px 40px;
+  background: #fffaf6;
+}
+
+.feature-box {
+  background: white;
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 70px 40px;
+  align-items: center;
+  background: #111;
+  color: white;
+}
+
+.promo-text span {
+  color: #ffb347;
+  font-weight: 700;
+}
+
+.promo-text h2 {
+  font-size: 2.8rem;
+  margin: 12px 0;
+}
+
+.promo-text a {
+  display: inline-block;
+  margin-top: 18px;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(135deg, #ff7b00, #ffb347);
+  padding: 14px 22px;
+  border-radius: 14px;
+}
+
+.promo-image img {
+  width: 100%;
+  border-radius: 28px;
+  height: 420px;
+  object-fit: cover;
+}

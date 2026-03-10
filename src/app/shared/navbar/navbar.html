@@ -1,0 +1,13 @@
+<header class="navbar">
+  <div class="logo">Burger<span>Lux</span></div>
+
+  <nav class="nav-links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/menu" routerLinkActive="active">Menu</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    <a routerLink="/order" routerLinkActive="active" class="cart-link">
+      Cart ({{ cartService.totalItems }})
+    </a>
+  </nav>
+</header>

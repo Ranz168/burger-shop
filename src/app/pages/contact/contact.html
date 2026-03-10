@@ -1,0 +1,101 @@
+<section class="contact-hero">
+  <div class="contact-hero-content">
+    <span class="section-badge">Get In Touch</span>
+    <h1>Contact BurgerLux</h1>
+    <p>
+      Whether you want to reserve a table, order for an event, or ask about our
+      premium burgers, we’d love to hear from you.
+    </p>
+  </div>
+</section>
+
+<section class="contact-page">
+  <div class="contact-info">
+    <div class="info-top">
+      <span class="mini-badge">Contact Info</span>
+      <h2>Let’s Talk Burgers</h2>
+      <p>
+        Reach us anytime for table reservations, catering, delivery support,
+        and partnership inquiries.
+      </p>
+    </div>
+
+    <div class="info-list">
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>
+          <h4>Visit Us</h4>
+          <p>Street 123, City Center</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div>
+          <h4>Call Us</h4>
+          <p>+855 12 345 678</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div>
+          <h4>Email Us</h4>
+          <p>burgerhouse@email.com</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">🕒</div>
+        <div>
+          <h4>Opening Hours</h4>
+          <p>Mon - Sun | 10:00 AM - 11:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form-card">
+    <div class="form-header">
+      <span class="mini-badge">Send Message</span>
+      <h2>We’ll Reply Quickly</h2>
+    </div>
+
+    <form class="contact-form" (ngSubmit)="onSubmit()">
+      <div class="input-row">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          [(ngModel)]="formData.name"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          [(ngModel)]="formData.email"
+          required
+        />
+      </div>
+
+      <input
+        type="text"
+        name="phone"
+        placeholder="Your Phone"
+        [(ngModel)]="formData.phone"
+      />
+
+      <textarea
+        name="message"
+        rows="6"
+        placeholder="Tell us what you need..."
+        [(ngModel)]="formData.message"
+        required
+      ></textarea>
+
+      <button type="submit">Send Premium Request</button>
+    </form>
+  </div>
+</section>

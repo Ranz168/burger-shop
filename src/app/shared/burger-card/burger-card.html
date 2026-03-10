@@ -1,0 +1,21 @@
+<div class="burger-card">
+  <div class="card-image-wrap">
+    <div class="badge">{{ burger.badge }}</div>
+    <img [src]="burger.image" [alt]="burger.name" loading="lazy" />
+  </div>
+
+  <div class="card-content">
+    <div class="title-row">
+      <h3>{{ burger.name }}</h3>
+      <span class="price">{{ burger.price | currency:'USD' }}</span>
+    </div>
+
+    <p>{{ burger.description }}</p>
+
+    <div class="rating">★★★★★</div>
+
+    <div class="card-actions">
+      <button class="btn-dark" (click)="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+</div>

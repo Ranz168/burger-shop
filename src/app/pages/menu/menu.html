@@ -1,0 +1,12 @@
+<section class="menu-page">
+  <div class="section-title">
+    <h2>Our Burger Menu</h2>
+    <p>Choose from 12 handcrafted burgers made with passion.</p>
+  </div>
+
+  <div class="burger-grid">
+    @for (burger of burgers; track burger.id) {
+      <app-burger-card [burger]="burger"></app-burger-card>
+    }
+  </div>
+</section>

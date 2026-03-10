@@ -1,0 +1,30 @@
+.menu-page {
+  padding: 70px 40px;
+  background:
+    radial-gradient(circle at top left, #fff0df, transparent 35%),
+    radial-gradient(circle at bottom right, #ffe3c7, transparent 30%),
+    #fffaf6;
+  min-height: 100vh;
+}
+
+.section-title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 44px;
+}
+
+.section-title h2 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.section-title p {
+  color: #6b6b6b;
+  line-height: 1.6;
+}
+
+.burger-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}

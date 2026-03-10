@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #f8f8f8;
+  color: #111;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+@media (max-width: 1100px) {
+  .contact-page,
+  .order-page,
+  .hero-content,
+  .promo {
+    grid-template-columns: 1fr !important;
+  }
+
+  .input-row,
+  .features,
+  .burger-grid,
+  .member-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cart-item {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .item-info p {
+    max-width: 100%;
+  }
+
+  .item-total {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .contact-hero,
+  .order-hero,
+  .contact-page,
+  .order-page {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .contact-hero h1,
+  .order-hero h1 {
+    font-size: 2.4rem !important;
+  }
+
+  .contact-info,
+  .contact-form-card,
+  .glass-card {
+    padding: 22px !important;
+  }
+}
