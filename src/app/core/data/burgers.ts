@@ -13,7 +13,7 @@ export const BURGERS: Burger[] = [
     name: 'Classic Beef Burger',
     price: 5.99,
     description: 'Juicy grilled beef, cheddar cheese, lettuce, and tomato.',
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd',
+    image: 'https://i.pinimg.com/736x/77/7e/d8/777ed8d70b122823c25a4fc851b437d5.jpg',
     badge: 'Popular'
   },
   {
@@ -21,7 +21,7 @@ export const BURGERS: Burger[] = [
     name: 'Double Smash Burger',
     price: 7.49,
     description: 'Two smashed patties with caramelized onions and cheese.',
-    image: 'https://images.unsplash.com/photo-1550547660-d9450f859349',
+    image: 'https://i.pinimg.com/1200x/44/a7/47/44a7470857eae54b03d080b1a5ea2b63.jpg',
     badge: 'Best Seller'
   },
   {
@@ -29,7 +29,7 @@ export const BURGERS: Burger[] = [
     name: 'Chicken Crunch Burger',
     price: 6.25,
     description: 'Crispy chicken fillet with spicy mayo and fresh slaw.',
-    image: 'https://images.unsplash.com/photo-1520072959219-c595dc870360',
+    image: 'https://i.pinimg.com/736x/82/e0/16/82e016563f01273c6a3e9e29a7783cfd.jpg',
     badge: 'Hot'
   },
   {
@@ -37,7 +37,7 @@ export const BURGERS: Burger[] = [
     name: 'BBQ Bacon Burger',
     price: 7.99,
     description: 'Smoky BBQ sauce, crispy bacon, cheese, and onion rings.',
-    image: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add',
+    image: 'https://i.pinimg.com/736x/13/b6/99/13b699bdd0177af113a401d2d629c621.jpg',
     badge: 'New'
   },
   {
@@ -45,7 +45,7 @@ export const BURGERS: Burger[] = [
     name: 'Cheese Lava Burger',
     price: 6.89,
     description: 'Loaded with melted cheese and signature house sauce.',
-    image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5',
+    image: 'https://i.pinimg.com/736x/bc/8a/5f/bc8a5f1dcbd42f762a8a5cce6c97d704.jpg',
     badge: 'Cheesy'
   },
   {
@@ -53,7 +53,7 @@ export const BURGERS: Burger[] = [
     name: 'Spicy Jalapeño Burger',
     price: 6.95,
     description: 'For spice lovers with jalapeños, pepper jack, and chili sauce.',
-    image: 'https://images.unsplash.com/photo-1607013251379-e6eecfffe234',
+    image: 'https://i.pinimg.com/736x/bb/9c/7f/bb9c7f91eb4b0e547da12740f3d47851.jpg',
     badge: 'Spicy'
   },
   {
@@ -61,7 +61,7 @@ export const BURGERS: Burger[] = [
     name: 'Mushroom Swiss Burger',
     price: 7.10,
     description: 'Swiss cheese with sautéed mushrooms and garlic butter.',
-    image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90',
+    image: 'https://i.pinimg.com/736x/b3/e7/77/b3e777ceea6c2387bf13178486f6443e.jpg',
     badge: 'Premium'
   },
   {
@@ -69,7 +69,7 @@ export const BURGERS: Burger[] = [
     name: 'Avocado Burger',
     price: 7.30,
     description: 'Creamy avocado, lettuce, tomato, and grilled patty.',
-    image: 'https://images.unsplash.com/photo-1603064752734-4c48eff53d05',
+    image: 'https://i.pinimg.com/1200x/cd/60/f6/cd60f6cb9216062dfb1b3be4da4d0f91.jpg',
     badge: 'Fresh'
   },
   {
@@ -77,7 +77,7 @@ export const BURGERS: Burger[] = [
     name: 'Crispy Fish Burger',
     price: 6.50,
     description: 'Golden fish fillet with tartar sauce and crunchy lettuce.',
-    image: 'https://images.unsplash.com/photo-1615297928064-24977384d0da',
+    image: 'https://i.pinimg.com/1200x/cd/27/61/cd276157e4f27e8312ff5fad3faf0927.jpg',
     badge: 'Seafood'
   },
   {
@@ -85,7 +85,7 @@ export const BURGERS: Burger[] = [
     name: 'Veggie Burger',
     price: 5.75,
     description: 'Healthy plant-based patty with avocado and greens.',
-    image: 'https://images.unsplash.com/photo-1525059696034-4967a8e1dca2',
+    image: 'https://i.pinimg.com/1200x/69/b7/ca/69b7ca2dc354cc607eb6788424258b52.jpg',
     badge: 'Vegan'
   },
   {
@@ -93,7 +93,7 @@ export const BURGERS: Burger[] = [
     name: 'Egg Delight Burger',
     price: 6.80,
     description: 'Fried egg, cheese, and beef patty in a toasted bun.',
-    image: 'https://images.unsplash.com/photo-1512152272829-e3139592d56f',
+    image: 'https://i.pinimg.com/1200x/10/09/22/100922639447914b9e114ec89f12c403.jpg',
     badge: 'Special'
   },
   {
@@ -101,7 +101,7 @@ export const BURGERS: Burger[] = [
     name: 'Ultimate Tower Burger',
     price: 8.99,
     description: 'A huge layered burger for the biggest appetite.',
-    image: 'https://images.unsplash.com/photo-1508737027454-e6454ef45afd',
+    image: 'https://i.pinimg.com/736x/e9/d8/0a/e9d80adcaf481d60b7c5ba71c24de565.jpg',
     badge: 'Mega'
   }
 ];

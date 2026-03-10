@@ -6,7 +6,7 @@ import { MemberCardComponent } from '../../shared/member-card/member-card';
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule, MemberCardComponent],
+  imports: [CommonModule],
   templateUrl: './about.html',
   styleUrls: ['./about.css']
 })

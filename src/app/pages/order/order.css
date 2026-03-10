@@ -47,12 +47,6 @@
   display: grid;
   grid-template-columns: 1.35fr 0.9fr;
   gap: 30px;
-  padding: 45px 40px 80px;
-  background:
-    radial-gradient(circle at top left, #fff0df, transparent 28%),
-    radial-gradient(circle at bottom right, #ffe4c8, transparent 25%),
-    #fffaf6;
-  min-height: 100vh;
 }
 
 .glass-card {

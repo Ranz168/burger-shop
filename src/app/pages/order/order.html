@@ -1,52 +1,92 @@
+<section class="order-hero">
+  <div class="order-hero-content">
+    <span class="section-badge">Premium Checkout</span>
+    <h1>Complete Your Burger Order</h1>
+    <p>
+      Review your burgers, adjust quantities, and place your order with a more
+      premium checkout experience.
+    </p>
+  </div>
+</section>
+
 <section class="order-page">
-  <div class="order-left">
-    <h2>Your Order</h2>
+  <div class="order-left glass-card">
+    <div class="section-head">
+      <div>
+        <span class="mini-badge dark-badge">Cart Summary</span>
+        <h2>Your Order</h2>
+      </div>
+    </div>
 
     @if (cartService.cartItems.length === 0) {
       <div class="empty-cart">
-        <h3>Your cart is empty</h3>
-        <p>Add some premium burgers from the menu.</p>
+        <div>
+          <div class="empty-icon">🍔</div>
+          <h3>Your cart is empty</h3>
+          <p>Add some premium burgers from the menu.</p>
+        </div>
       </div>
     } @else {
       <div class="cart-list">
         @for (item of cartService.cartItems; track item.id) {
           <div class="cart-item">
             <img [src]="item.image" [alt]="item.name" />
+
             <div class="item-info">
+              <span class="item-tag">{{ item.badge }}</span>
               <h4>{{ item.name }}</h4>
-              <p>{{ item.price | currency:'USD' }}</p>
+              <p>{{ item.description }}</p>
             </div>
 
             <div class="qty-box">
-              <button (click)="cartService.decrease(item.id)">-</button>
+              <button type="button" (click)="cartService.decrease(item.id)">−</button>
               <span>{{ item.quantity }}</span>
-              <button (click)="cartService.increase(item.id)">+</button>
+              <button type="button" (click)="cartService.increase(item.id)">+</button>
             </div>
 
             <div class="item-total">
               {{ item.price * item.quantity | currency:'USD' }}
             </div>
 
-            <button class="remove-btn" (click)="cartService.remove(item.id)">×</button>
+            <button type="button" class="remove-btn" (click)="cartService.remove(item.id)">
+              ×
+            </button>
           </div>
         }
       </div>
 
       <div class="summary-box">
-        <h3>Total Items: {{ cartService.totalItems }}</h3>
-        <h2>Total: {{ cartService.totalPrice | currency:'USD' }}</h2>
+        <div class="summary-row">
+          <span>Total Items</span>
+          <strong>{{ cartService.totalItems }}</strong>
+        </div>
+
+        <div class="summary-row grand-total">
+          <span>Total Price</span>
+          <strong>{{ cartService.totalPrice | currency:'USD' }}</strong>
+        </div>
       </div>
     }
   </div>
 
-  <div class="order-right">
-    <h2>Checkout</h2>
+  <div class="order-right glass-card">
+    <div class="form-header">
+      <span class="mini-badge">Checkout</span>
+      <h2>Delivery Details</h2>
+      <p>Fill in your information to place your premium order.</p>
+    </div>
 
     <form class="checkout-form" (ngSubmit)="placeOrder()">
       <input type="text" name="name" placeholder="Full Name" [(ngModel)]="customer.name" />
       <input type="text" name="phone" placeholder="Phone Number" [(ngModel)]="customer.phone" />
-      <textarea name="address" rows="5" placeholder="Delivery Address" [(ngModel)]="customer.address"></textarea>
-      <button type="submit">Place Order</button>
+      <textarea
+        name="address"
+        rows="6"
+        placeholder="Delivery Address"
+        [(ngModel)]="customer.address"
+      ></textarea>
+
+      <button type="submit">Place Premium Order</button>
     </form>
   </div>
 </section>
