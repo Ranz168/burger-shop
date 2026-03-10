@@ -10,7 +10,7 @@ export const MEMBERS: Member[] = [
     id: 1,
     name: 'David Carter',
     role: 'Founder & CEO',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e'
+    image: 'c:\Users\Hort\Downloads\photo_2025-12-01_11-26-29.jpg'
   },
   {
     id: 2,
